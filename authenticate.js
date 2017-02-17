@@ -40,3 +40,35 @@ exports.facebook = passport.use(new FacebookStrategy({
     });
   }
 ));
+//////////////////////
+///google signin
+//passport.use(new GoogleStrategy({
+ //           clientID: configAuth.googleAuth.clientID,
+ //            clientSecret: configAuth.googleAuth.clientSecret,
+ //            callbackURL: configAuth.googleAuth.callbackURL,
+ //       },
+ //   function(accessToken, refreshToken, profile, done) {
+ //   User.findOne({ OauthId: profile.id }, function(err, user) {
+ //     if(err) {
+ //       console.log(err); // handle errors!
+ //     }
+ //     if (!err && user !== null) {
+ //       done(null, user);
+ //     } else {
+ //       user = new User({
+ //         username: profile.displayName
+ //       });
+ //       user.OauthId = profile.id;
+ //       user.OauthToken = accessToken;
+ //       user.save(function(err) {
+ //         if(err) {
+ //           console.log(err); // handle errors!
+ //         } else {
+ //           console.log("saving user ...");
+//            done(null, user);
+//          }
+//        });
+//      }
+//    });
+//  }
+//));
