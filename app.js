@@ -20,6 +20,7 @@ db.once('open', function () {
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var dishRouter = require('./routes/dishRouter');
 
 
 var app = express();
